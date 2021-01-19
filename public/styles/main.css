@@ -1,0 +1,34 @@
+:root {
+    --color1: #556270;
+    --color2: #4ECDC4;
+    --color3: #C7F464;
+    --color4: #FF6B6B;
+    --color5: #C44D58;
+    --color-background: #F0F0F7;
+    --color-background-menu:  #00172cee;
+    --color-background-menu-houver:  #aaccec;
+    --color-background-menu-active: #0084ff;
+    --color-text-menu:#f2f2f2;
+    --color-text-menu-houver:#353535;
+    --color-title: #FFFFFF; 
+    --color-text-title: #00172c;
+    --color-background-video: #C1BCCC; 
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    padding: 5em;
+    height: 100vh;
+}
+
+body,
+input,
+button,
+textarea {
+    font: 500 1.6rem Poppins;
+    color: var(--color-text-title);
+    background-color: var(--color-background);
+}

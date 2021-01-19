@@ -1,0 +1,30 @@
+.menu {
+    position: fixed;
+    width: 100%;
+    background-color: var(--color-background-menu);
+    display: flex;
+    z-index: 10;
+}
+.menu li {
+    list-style: none;
+}
+.menu li a {
+    position: relative;
+    display: block;
+    color: var(--color-text-menu);
+    text-align: center;
+    padding: 15px 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 20px;
+}
+.menu li.ativo a {
+    background-color: var(--color-background-menu-active);
+    color: var(--color-title);
+}
+.menu .item-menu:hover {
+    background-color: var(--color-background-menu-houver);
+    color: var(--color-text-menu-houver);
+    border-fa
+}

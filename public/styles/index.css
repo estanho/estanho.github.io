@@ -1,0 +1,55 @@
+div {
+    padding: 50px;
+    height: 500px;
+}
+
+.home {
+    padding: 150px;
+    background-image:url("/public/images/topo.png");
+    background-position: center;
+    background-repeat: repeat-x;
+    height: 100%;
+    text-align: center;
+}
+.home h1 {
+    display: inline-block;
+    vertical-align: top;
+    color: var(--color-title);
+    font-size: 60px;
+}
+.home h4 {
+    color: var(--color-title);
+    font-size: 24px;
+}
+.home p {
+    text-align: center;
+    margin-top: 100px;
+    color: var(--color-title);
+    font-size: 22px;
+}
+
+.info p.dev {
+    text-align: center;
+}
+.contato {
+    text-align: center;
+}
+
+.contato a {
+    display: inline-block;
+    margin-top: 30px;
+    width: 300px;
+    text-decoration: none;
+    padding: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #00172cee;
+    text-decoration: none;
+}
+.contato a:hover {
+    color: #00172cee;
+    border: 2px solid#00172cee;
+    background-color: #FFFFFF;
+    transition-duration: 0.4s;
+}

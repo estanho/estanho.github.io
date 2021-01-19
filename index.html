@@ -1,10 +1,45 @@
+<!--
+	Codigo feito por: Pedro Henrique da Rosa Garcia
+-->
+
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Página principal</title>
-		<meta charset="utf-8">
-	</head>
-	<body>
-        <h1>Hello o-o</h1>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#8257E5">
+    <title>PHRG</title>
+    <link rel="stylesheet" href="./public/styles/index.css">
+    <link rel="stylesheet" href="./public/styles/main.css">
+    <link rel="stylesheet" href="./public/styles/partials/menu.css">
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+	<script src="/public/scripts/menu.js"></script>
+</head>
+<body>
+    <ul class="menu" id="menu">
+        <li class="ativo" onclick="alterarOpc(this)"><a class="item-menu" href="#home">Home</a></li>
+        <li class="opc" onclick="alterarOpc(this)"><a class="item-menu" href="#contato">Contato</a></li>
+    </ul>
+    
+    <div class ="home" id="home" >
+		<h1>Pedro Henrique da Rosa Garcia</h1>
+    </div>
+    
+    <div class ="info" id="info">
+        <p class="dev">
+            Em desenvolvimento ...
+        </p>
+    </div>
+
+    <div class="contato" id="contato">
+        <h1>Contato</h1>
+        <br>
+        <h4>
+            Email: pedroh.rosag@gmail.com
+            <br>
+            <a href="https://www.linkedin.com/in/pedrohrosag/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/estanho" target="_blank">GitHub</a>
+        </h4>
+    </div>
+</body>
 </html>
