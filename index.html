@@ -3,43 +3,70 @@
 -->
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="theme-color" content="#8257E5">
     <title>PHRG</title>
-    <link rel="stylesheet" href="./public/styles/index.css">
-    <link rel="stylesheet" href="./public/styles/main.css">
-    <link rel="stylesheet" href="./public/styles/partials/menu.css">
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
-	<script src="/public/scripts/menu.js"></script>
-</head>
-<body>
-    <ul class="menu" id="menu">
-        <li class="ativo" onclick="alterarOpc(this)"><a class="item-menu" href="#home">Home</a></li>
-        <li class="opc" onclick="alterarOpc(this)"><a class="item-menu" href="#contato">Contato</a></li>
-    </ul>
     
-    <div class ="home" id="home" >
-		<h1>Pedro Henrique da Rosa Garcia</h1>
-    </div>
-    
-    <div class ="info" id="info">
-        <p class="dev">
-            Em desenvolvimento ...
-        </p>
-    </div>
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/e5ab65608c.js" crossorigin="anonymous"></script>
 
-    <div class="contato" id="contato">
-        <h1>Contato</h1>
-        <br>
-        <h4>
-            Email: pedroh.rosag@gmail.com
-            <br>
-            <a href="https://www.linkedin.com/in/pedrohrosag/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/estanho" target="_blank">GitHub</a>
-        </h4>
-    </div>
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/partials/menu.css">
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700&amp;family=Poppins:wght@400;600&amp;display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-------------- Navigation -------------->
+    <nav class="nav">
+        <div class="nav-menu flex-row">
+            <div class="nav-brand">
+                <a href="#" class="text-gray">PHRG</a>
+            </div>
+            <div id="toggle-collapse" class="toggle-collapse">
+                <div class="toggle-icons">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div>
+                <ul class="nav-items">
+                    <li class="nav-link">
+                        <a href="#">Home</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Category</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Archive</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Page</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="#">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="social text-gray">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-twitch"></i></i></a>
+            </div>
+        </div>
+    </nav>
+    <!------X------- Navigation ------X------->
+
+    <!-- Jquery Library file -->
+    <script src="./js/Jquery3.6.0.min.js"></script>
+    
+    <!-- Custom Javascript: Main -->
+    <script src="./js/main.js"></script>
 </body>
 </html>
