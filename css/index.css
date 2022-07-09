@@ -21,8 +21,8 @@ html, body {
     --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 
-/* ----------- Global Classes ---------- */
 
+/* ----------- Global Classes ---------- */
 a {
     text-decoration: none;
     color: var(--text-gray);
@@ -38,15 +38,38 @@ ul {
     list-style-type: none;
 }
 
+h1 {
+    font-family: var(--Poppins);
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-family: var(--Archivo);
+}
+
+h3 {
+    font-family: var(--Archivo);
+    font-size: 1.3rem;
+}
+
+button.btn {
+    border: none;
+    border-radius: 2rem;
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-family: var(--Poppins);
+    cursor: pointer;
+}
+
 /* -----X----- Global Classes -----X---- */
 
-/* -------------- navbar -------------- */
 
+/* -------------- navbar -------------- */
 .nav {
     background: white;
     padding: 0 2rem;
     height: 0rem;
-    min-height: 10vh;
+    min-height: 80px;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
@@ -118,11 +141,47 @@ ul {
 .nav .social i:hover {
     color: #a1c4cf;
 }
-
 /* -------X------ navbar -------X------ */
 
-/* ---------- Viewport < 750 ---------- */
 
+/* -------------- Main Content -------------- */
+
+/* Site Title */
+main .site-title {
+    background: url('../assets/background_1.jpg');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+main .site-title .site-background {
+    padding-top: 10rem;
+    text-align: center;
+    color: var(--white);
+}
+
+main .site-title h1, h3 {
+    margin: .3rem;
+}
+
+main .site-title .btn {
+    margin: 1.8rem;
+    background: var(--sky);
+}
+
+main .site-title .btn:hover {
+    background: transparent;
+    border: 1px solid var(--white);
+    color: var(--white);
+}
+
+/* X Site Title X */
+
+/* ------X------- Main Content ------X------- */
+
+
+/* ---------- Viewport < 750 ---------- */
 @media only screen and (max-width: 750px){
     .nav .nav-menu, .nav-items{
         flex-direction: column;
@@ -132,5 +191,4 @@ ul {
         display: initial;
     }
 }
-
 /* -----X---- Viewport < 750 -----X---- */
