@@ -60,7 +60,6 @@ button.btn {
     font-family: var(--Poppins);
     cursor: pointer;
 }
-
 /* -----X----- Global Classes -----X---- */
 
 
@@ -69,7 +68,7 @@ button.btn {
     background: white;
     padding: 0 2rem;
     height: 0rem;
-    min-height: 80px;
+    min-height: 75px;
     overflow: hidden;
     transition: height 1s ease-in-out;
 }
@@ -148,7 +147,7 @@ button.btn {
 
 /* Site Title */
 main .site-title {
-    background: url('../assets/background_1.jpg');
+    background: url('/assets/background_1.jpg');
     background-size: cover;
     height: 100vh;
     display: flex;
