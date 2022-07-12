@@ -16,6 +16,9 @@
     <!-- Owl Carousel -->
     <link rel="stylesheet" href="./css/owl.carousel.min.css">
     <link rel="stylesheet" href="./css/owl.theme.default.min.css">
+
+    <!-- AOS Library -->
+    <link rel="stylesheet" href="./css/aos.css">
     
     <!-- Custom Style -->
     <link rel="stylesheet" href="./css/index.css">
@@ -69,7 +72,7 @@
     <main>
         <!-------------- Site Title -------------->
         <section class="site-title">
-            <div class="site-background">
+            <div class="site-background" data-aos="fade-up" data-aos-delay="100">
                 <h3>Em Desenvolvimento..</h3>
                 <h1>Pedro Henrique da Rosa Garcia</h1>
                 <button class="btn">Bora lá</button>
@@ -82,7 +85,7 @@
             <div class="blog">
                 <div class="container">
                     <div class="owl-carousel owl-theme blog-post">
-                        <div class="blog-content">
+                        <div class="blog-content" data-aos="fade-right" data-aos-delay="200">
                             <img src="./assets/background_1.jpg" alt="post-1">
                             <div class="blog-title">
                                 <h3>Lorem ipsum dolor sit amet.</h3>
@@ -90,7 +93,7 @@
                                 <span>2 minutes</span>
                             </div>
                         </div>
-                        <div class="blog-content">
+                        <div class="blog-content" data-aos="fade-in" data-aos-delay="200">
                             <img src="./assets/background_1.jpg" alt="post-1">
                             <div class="blog-title">
                                 <h3>Lorem ipsum dolor sit amet.</h3>
@@ -98,7 +101,7 @@
                                 <span>2 minutes</span>
                             </div>
                         </div>
-                        <div class="blog-content">
+                        <div class="blog-content" data-aos="fade-left" data-aos-delay="200">
                             <img src="./assets/background_1.jpg" alt="post-1">
                             <div class="blog-title">
                                 <h3>Lorem ipsum dolor sit amet.</h3>
@@ -144,7 +147,7 @@
         <section class="container">
             <div class="site-content">
                 <div class="posts">
-                    <div class="post-content">
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
                         <div class="post-image">
                             <div>
                                 <img src="./assets/background_1.jpg" class="img" alt="blog1">
@@ -167,7 +170,7 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="post-content">
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
                         <div class="post-image">
                             <div>
                                 <img src="./assets/background_1.jpg" class="img" alt="blog1">
@@ -190,7 +193,7 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="post-content">
+                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
                         <div class="post-image">
                             <div>
                                 <img src="./assets/background_1.jpg" class="img" alt="blog1">
@@ -224,35 +227,76 @@
                     <div class="category">
                         <h2>Category</h2>
                         <ul class="category-list">
-                            <li class="list-items">
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="100">
                                 <a href="#">Software</a>
                                 <span>(05)</span>
                             </li>
-                        </ul>
-                        <ul class="category-list">
-                            <li class="list-items">
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="200">
                                 <a href="#">Software</a>
                                 <span>(03)</span>
                             </li>
-                        </ul>
-                        <ul class="category-list">
-                            <li class="list-items">
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="300">
                                 <a href="#">Software</a>
                                 <span>(01)</span>
                             </li>
-                        </ul>
-                        <ul class="category-list">
-                            <li class="list-items">
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="400">
                                 <a href="#">Software</a>
                                 <span>(08)</span>
                             </li>
-                        </ul>
-                        <ul class="category-list">
-                            <li class="list-items">
+                            
+                            <li class="list-items" data-aos="fade-left" data-aos-delay="500">
                                 <a href="#">Software</a>
                                 <span>(04)</span>
                             </li>
                         </ul>
+                    </div>
+                    <div class="popular-post">
+                        <h2>Popular Post</h2>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="200">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/background_1.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Janeiro 14, 2022</span>
+                                    <span>2 Comentários</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, minus.</a>
+
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="300">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/background_1.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Janeiro 14, 2022</span>
+                                    <span>2 Comentários</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, minus.</a>
+
+                            </div>
+                        </div>
+                        <div class="post-content" data-aos="flip-up" data-aos-delay="400">
+                            <div class="post-image">
+                                <div>
+                                    <img src="./assets/background_1.jpg" class="img" alt="blog1">
+                                </div>
+                                <div class="post-info flex-row">
+                                    <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Janeiro 14, 2022</span>
+                                    <span>2 Comentários</span>
+                                </div>
+                            </div>
+                            <div class="post-title">
+                                <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, minus.</a>
+
+                            </div>
+                        </div>
                     </div>
                 </aside>
             </div>
@@ -262,11 +306,43 @@
     </main>
     <!------X------- Main Site Section ------X------->
 
+    <!-------------- Footer -------------->
+    <footer class="footer">
+        <div class="container">
+            <div class="about-us" data-aos="fade-right" data-aos-delay="200">
+                <h2>About us</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus perspiciatis non neque ipsum ullam praesentium veritatis autem aspernatur nemo ut.</p>
+            </div>
+            <div class="follow" data-aos="fade-left" data-aos-delay="200">
+                <h2>Follow us</h2>
+                <p>Let us be Social</p>
+                <div>
+                    <i class="fab fa-twitch"></i>
+                    <i class="fab fa-twitter"></i>
+                    <i class="fab fa-github"></i>
+                    <i class="fab fa-linkedin-in"></i>
+                </div>
+            </div>
+        </div>
+        <div class="rights flex-row">
+            <h4 class="text-gray">
+                Copyright © 2022 All rights reserved | made by Estanho
+            </h4>
+        </div>
+        <div class="move-up">
+            <span><i class="fas fa-arrow-circle-up fa-2x"></i></span>
+        </div>
+    </footer>
+    <!------X------- Footer ------X------->
+
     <!-- Jquery Library file -->
     <script src="./js/Jquery3.6.0.min.js"></script>
 
     <!-- Owl Carousel -->
     <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- AOS Library -->
+    <script src="./js/aos.js"></script>
     
     <!-- Custom Javascript: Main -->
     <script src="./js/main.js"></script>

@@ -202,7 +202,7 @@ main .blog {
     background: url('../assets/');
     background-repeat: no-repeat;
     background-position: right;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     background-size: 100%;
 }
@@ -264,7 +264,6 @@ main .site-content {
 
 main .post-content {
     width: 100%;
-    margin-bottom: 5rem;
 }
 
 main .site-content .post-content > .post-image, .post-title {
@@ -350,9 +349,97 @@ main .post-content .post-title a {
     color: black;
 }
 
+.site-content .sidebar .popular-post .post-content {
+    padding: 1rem 0;
+}
+
+.site-content .sidebar .popular-post h2 {
+    padding-top: 8rem;
+}
+
+.site-content .sidebar .popular-post .post-info {
+    padding: .4rem .1rem !important;
+    bottom: 0rem !important;
+    left: 1.5rem !important;
+    border-radius: 0rem !important;
+    background: var(--white) !important;
+
+}
+
+.site-content .sidebar .popular-post .post-title a {
+    font-size: 1rem;
+}
+
 /* X Sidebar X */
 
 /* ------X------- Main Content ------X------- */
+
+footer.footer {
+    height: 100%;
+    background: var(--bg-color);
+    position: relative;
+}
+
+footer.footer .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+footer.footer .container > div {
+    flex-grow: 1;
+    flex-basis: 0;
+    padding: 3rem .9rem;
+}
+
+footer.footer .container h2 {
+    color: var(--white);
+}
+
+footer.footer .follow div i {
+    color: var(--white);
+    padding: 0 .4rem;
+}
+
+footer.footer .rights {
+    justify-content: center;
+    font-family: var(--Poppins);
+}
+
+footer.footer .move-up {
+    position: absolute;
+    right: 6%;
+    top: 50%;
+}
+
+footer.footer .move-up span {
+    color: var(--midnight);
+}
+
+footer.footer .move-up span:hover {
+    color: var(--white);
+    cursor: pointer;
+}
+
+/* -------------- Footer -------------- */
+
+
+
+/* ------X------- Footer ------X------- */
+
+
+/* ---------- Viewport < 1130 ---------- */
+@media only screen and (max-width: 1130px){
+    .site-content .post-content > .post-image .post-info {
+        left: 2rem !important;
+        bottom: 1.2rem !important;
+        border-radius: 0% !important;
+    }
+    .site-content .sidebar .popular-post .post-info {
+        display: none !important;
+    }
+}
+/* -----X---- Viewport < 1130 -----X---- */
+
 
 /* ---------- Viewport < 750 ---------- */
 @media only screen and (max-width: 750px){
@@ -363,5 +450,31 @@ main .post-content .post-title a {
     .nav .toggle-collapse {
         display: initial;
     }
+
+    main .site-content {
+        grid-template-columns: 100%;
+    }
+
+    footer.footer .container {
+        grid-template-columns: repeat(1,1fr);
+    }
 }
 /* -----X---- Viewport < 750 -----X---- */
+
+
+/* ---------- Viewport < 520 ---------- */
+@media only screen and (max-width: 520px){
+    .site-content .post-content > .post-image .post-info {
+        display: none;
+    }
+
+    footer.footer .container > div {
+        padding: 1rem .9rem !important;
+    }
+
+    footer .rights {
+        padding: 0 1.4rem;
+        text-align: center;
+    }
+}
+/* -----X---- Viewport < 520 -----X---- */
