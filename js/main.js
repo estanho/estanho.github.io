@@ -1,3 +1,19 @@
+
+$.get( "./posts.json", function(data) {
+    data.posts.forEach(function(post,index){
+        $(".owl-carousel").append(
+            `<div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                <img src="${post.image}" alt="post-1">
+                <div class="blog-title">
+                    <h3>${post.title}</h3>
+                    <button class="btn btn-blog">Ler mais</button>
+                    <span>${post.data}</span>
+                </div>
+            </div>`);
+            console.log('Foi');
+    });
+});
+
 const responsive = {
     0: {
         items: 1
@@ -11,7 +27,6 @@ const responsive = {
 }
 
 $(document).ready(function(){
-
     $nav = $('.nav');
     $toggleCollapse = $('.toggle-collapse');
 
@@ -40,5 +55,4 @@ $(document).ready(function(){
 
     //AOS Instance
     AOS.init();
-
 });

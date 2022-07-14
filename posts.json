@@ -1,0 +1,34 @@
+{
+    "posts": [
+        {
+            "title": "1",
+            "image": "./assets/background_1.jpg",
+            "data": ""
+        },
+        {
+            "title": "2",
+            "image": "./assets/background_1.jpg",
+            "data": ""
+        },
+        {
+            "title": "2",
+            "image": "./assets/background_1.jpg",
+            "data": ""
+        },
+        {
+            "title": "3",
+            "image": "./assets/background_1.jpg",
+            "data": ""
+        },
+        {
+            "title": "4",
+            "image": "./assets/background_1.jpg",
+            "data": ""
+        },
+        {
+            "title": "5",
+            "image": "./assets/background_1.jpg",
+            "data": ""
+        }
+    ]
+}
