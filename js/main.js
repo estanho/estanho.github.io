@@ -9,23 +9,23 @@ const responsive = {
         items: 3
     }
 }
-// Load Json
-$.get( "./posts.json", function(data) {
-    data.posts.forEach(function(post){
-        $(".owl-carousel").append(
-            `<div class="blog-content" data-aos="fade-right" data-aos-delay="200">
-                <img src="${post.image}" alt="post-1">
-                <div class="blog-title">
-                    <h3>${post.title}</h3>
-                    <button class="btn btn-blog">Ler mais</button>
-                    <span>${post.day}</span>
-                </div>
-            </div>`);
-            console.log('Foi');
-    });
-});
 
 $(document).ready(function(){
+
+    $.get( "./posts.json", function(data) {
+        data.posts.forEach(function(post){
+            $(".owl-carousel").append(
+                `<div class="blog-content" data-aos="fade-right" data-aos-delay="200">
+                    <img src="${post.image}" alt="post-1">
+                    <div class="blog-title">
+                        <h3>${post.title}</h3>
+                        <button class="btn btn-blog">Ler mais</button>
+                        <span>${post.day}</span>
+                    </div>
+                </div>`);
+                console.log('Foi');
+        });
+    });
 
     $nav = $('.nav');
     $toggleCollapse = $('.toggle-collapse');
@@ -35,16 +35,18 @@ $(document).ready(function(){
         $nav.toggleClass('collapse');
     });
 
-    // Owl Carousel for blog
-    $('.owl-carousel').owlCarousel({
-        loop: true,
-        autoplay: true,
-        autoplayTimeout: 10000,
-        dots: false,
-        nav: true,
-        navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
-        responsive: responsive
-    });
+    setTimeout(function(){
+        // Owl Carousel for blog
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            autoplay: true,
+            autoplayTimeout: 10000,
+            dots: false,
+            nav: true,
+            navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
+            responsive: responsive
+        });
+     }, 100);
 
     // Click to scroll top
     $('.move-up span').click(function(){
