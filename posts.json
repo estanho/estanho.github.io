@@ -2,22 +2,22 @@
     "posts": [
         {
             "title": "1",
-            "image": "/assets/background_1.jpg",
+            "image": "/assets/images_posts/background_test.jpg",
             "day": "x"
         },
         {
             "title": "2",
-            "image": "/assets/background_1.jpg",
+            "image": "/assets/images_posts/background_test.jpg",
             "day": "x"
         },
         {
             "title": "3",
-            "image": "/assets/background_1.jpg",
+            "image": "/assets/images_posts/background_test.jpg",
             "day": "x"
         },
         {
             "title": "4",
-            "image": "/assets/background_1.jpg",
+            "image": "/assets/images_posts/background_test.jpg",
             "day": "x"
         }
     ]

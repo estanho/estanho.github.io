@@ -166,7 +166,7 @@ p {
 
 /* Site Title */
 main .site-title {
-    background: url('/assets/background_2.jpg');
+    background: url('/assets/background/background_title.jpg');
     background-size: cover;
     height: 100vh;
     display: flex;
@@ -418,6 +418,10 @@ footer.footer .move-up span {
 footer.footer .move-up span:hover {
     color: var(--white);
     cursor: pointer;
+}
+
+footer.footer .social i:hover {
+    color: #a1c4cf;
 }
 
 /* -------------- Footer -------------- */
