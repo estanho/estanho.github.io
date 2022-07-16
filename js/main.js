@@ -46,7 +46,7 @@ $(document).ready(function(){
             navText: [$('.owl-navigation .owl-nav-prev'), $('.owl-navigation .owl-nav-next')],
             responsive: responsive
         });
-     }, 350);
+     }, 300);
 
     // Click to scroll top
     $('.move-up span').click(function(){
