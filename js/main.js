@@ -100,4 +100,6 @@ $(document).ready(function(){
 
     //AOS Instance
     AOS.init();
+
+    console.log ("1.1");
 });
