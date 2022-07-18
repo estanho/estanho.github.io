@@ -1,4 +1,4 @@
-console.log ("1.5");
+console.log ("1.6");
 
 const responsive = {
     0: {
@@ -15,20 +15,18 @@ const responsive = {
 $(document).ready(function(){
 
     var posts;
-
-    // Load json
-    function loadPosts(){
-        console.log("1 - Load Json!");
+   
+    // Carousel
+    $.when(
+        // Load json
         $.getJSON( "../posts.json", (data) => {
             posts = data.posts;
         })
-        .done(function() { console.log('🟢 getJSON request succeeded!'); })
-        .fail(function(jqXHR, textStatus, errorThrown) { console.log('🔴 getJSON request failed! ' + textStatus); })
-        .always(function() { console.log('🟢 getJSON request ended!'); });
-    }
-    
-    // Carousel
-    $.when(loadPosts()).then(() => {
+        .done(function() { console.log('1 - 🟢 getJSON request succeeded!'); })
+        .fail(function(jqXHR, textStatus, errorThrown) { console.log('1 - 🔴 getJSON request failed! ' + textStatus); })
+        .always(function() { console.log('1 - 🟢 getJSON request ended!'); })
+    )
+    .then(() => {
         console.log("2 - Load Carousel!");
         posts.forEach((post) => {
             $(".owl-carousel").append(
@@ -41,7 +39,8 @@ $(document).ready(function(){
                     </div>
                 </div>`);
             });
-    }).done(() => {
+    })
+    .done(() => {
         console.log("3 - Load Icons!");
         $(".blog .container").append(`
             <div class="owl-navigation">
