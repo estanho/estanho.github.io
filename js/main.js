@@ -1,3 +1,5 @@
+console.log ("1.2");
+
 const responsive = {
     0: {
         items: 1
@@ -100,6 +102,4 @@ $(document).ready(function(){
 
     //AOS Instance
     AOS.init();
-
-    console.log ("1.1");
 });
