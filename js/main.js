@@ -1,4 +1,4 @@
-console.log ("1.4");
+console.log ("1.5");
 
 const responsive = {
     0: {
@@ -18,13 +18,18 @@ $(document).ready(function(){
 
     // Load json
     function loadPosts(){
+        console.log("1 - Load Json!");
         $.getJSON( "../posts.json", (data) => {
             posts = data.posts;
-        });
+        })
+        .done(function() { console.log('🟢 getJSON request succeeded!'); })
+        .fail(function(jqXHR, textStatus, errorThrown) { console.log('🔴 getJSON request failed! ' + textStatus); })
+        .always(function() { console.log('🟢 getJSON request ended!'); });
     }
     
     // Carousel
     $.when(loadPosts()).then(() => {
+        console.log("2 - Load Carousel!");
         posts.forEach((post) => {
             $(".owl-carousel").append(
                 `<div class="blog-content" data-aos="fade-right" data-aos-delay="200">
@@ -37,6 +42,7 @@ $(document).ready(function(){
                 </div>`);
             });
     }).done(() => {
+        console.log("3 - Load Icons!");
         $(".blog .container").append(`
             <div class="owl-navigation">
             <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
