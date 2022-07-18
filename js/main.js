@@ -1,4 +1,4 @@
-console.log ("1.2");
+console.log ("1.3");
 
 const responsive = {
     0: {
@@ -22,7 +22,7 @@ $(document).ready(function(){
     });
 
     // Carousel
-    $.when().then(() => {
+    $.when(posts).then(() => {
         posts.forEach((post) => {
             $(".owl-carousel").append(
                 `<div class="blog-content" data-aos="fade-right" data-aos-delay="200">
@@ -34,8 +34,7 @@ $(document).ready(function(){
                     </div>
                 </div>`);
             });
-    })
-    .done(() => {
+    }).done(() => {
         $(".blog .container").append(`
             <div class="owl-navigation">
             <span class="owl-nav-prev"><i class="fas fa-long-arrow-alt-left"></i></span>
