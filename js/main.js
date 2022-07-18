@@ -1,4 +1,4 @@
-console.log ("1.3");
+console.log ("1.4");
 
 const responsive = {
     0: {
@@ -17,12 +17,14 @@ $(document).ready(function(){
     var posts;
 
     // Load json
-    $.getJSON( "../posts.json", (data) => {
-        posts = data.posts;
-    });
-
+    function loadPosts(){
+        $.getJSON( "../posts.json", (data) => {
+            posts = data.posts;
+        });
+    }
+    
     // Carousel
-    $.when(posts).then(() => {
+    $.when(loadPosts()).then(() => {
         posts.forEach((post) => {
             $(".owl-carousel").append(
                 `<div class="blog-content" data-aos="fade-right" data-aos-delay="200">
