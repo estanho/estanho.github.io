@@ -116,7 +116,7 @@ p {
 }
 
 .collapse {
-    height: 35rem;
+    height: 30rem;
 }
 
 .nav .nav-items {
@@ -307,24 +307,10 @@ main .post-content .post-title a {
     padding: .7rem 1.5rem;
     background: var(--sky);
 }
-
-.site-content .pagination {
-    justify-content: center;
-    color: var(--text-gray);
-    margin: 4rem 0;
-
-}
-
-.site-content .pagination a {
-    padding: .6rem .9rem;
-    border-radius: 2rem;
-    margin: 0 .3rem;
-    font-family: var(--Poppins);
-}
-
-.site-content .pagination .pages {
-    background: var(--text-gray);
-    color: var(--white);
+.site-content .posts .more-btn {
+    width: 100%;
+    margin: 3rem 0;
+    background: var(--sky);
 }
 /* X Site Content X */
 
@@ -429,8 +415,11 @@ footer.footer .social i:hover {
 
 
 /* ------X------- Footer ------X------- */
-
-
+@media only screen and (max-width: 1440px){
+    main .blog {
+        height: 60vh;
+    }
+}
 /* ---------- Viewport < 1130 ---------- */
 @media only screen and (max-width: 1130px){
     .site-content .post-content > .post-image .post-info {
