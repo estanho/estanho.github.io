@@ -202,8 +202,9 @@ main .blog {
     /*background: url('/assets/background_1.jpg');*/
     background-repeat: no-repeat;
     background-position: right;
-    height: 80vh;
+    height: 100%;
     width: 100%;
+    margin-bottom: 10vh;
     background-size: 100%;
 }
 
@@ -415,11 +416,7 @@ footer.footer .social i:hover {
 
 
 /* ------X------- Footer ------X------- */
-@media only screen and (max-width: 1440px){
-    main .blog {
-        height: 60vh;
-    }
-}
+
 /* ---------- Viewport < 1130 ---------- */
 @media only screen and (max-width: 1130px){
     .site-content .post-content > .post-image .post-info {
