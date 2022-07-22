@@ -1,4 +1,4 @@
-console.log ("1.6");
+console.log ("1.7");
 
 const responsive = {
     0: {
