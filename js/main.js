@@ -1,4 +1,4 @@
-console.log ("1.7");
+console.log ("1.8");
 
 const responsive = {
     0: {
@@ -21,8 +21,6 @@ $(document).ready(async function(){
     postsNumber = loadFirstPostsSiteContent(posts,postsNumber);
     
     $morePosts = $(".posts");
-
-    
 
     $morePosts.click(function (){
         //Posts
