@@ -17,40 +17,18 @@ $(document).ready(async function(){
     var postsNumber = 0;
 
     const posts = await loadJSON();
-    loadPostsCarousel(posts);
-    loadPostsSiteContent(posts);
-
-    $(".posts").append(`<button class="btn more-btn">Read More &nbsp;<i></i></button>`);
-
+    await loadPostsCarousel(posts);
+    postsNumber = loadFirstPostsSiteContent(posts,postsNumber);
+    
     $morePosts = $(".posts");
+
+    
 
     $morePosts.click(function (){
         //Posts
-        let aux = postsNumber;
-        for(postsNumber; postsNumber < (aux+4); postsNumber++){
-            if(postsNumber < posts.length){
-                $(".more-btn").before(
-                    `<hr>
-                    <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
-                        <div class="post-image">
-                            <div>
-                                <img src="${posts[postsNumber].image}" class="img" alt="blog1">
-                            </div>
-                            <div class="post-info flex-row">
-                                <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
-                                <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Janeiro 14, 2022</span>
-                            </div>
-                        </div>
-                        <div class="post-title">
-                            <a href="#">${posts[postsNumber].title}</a>
-                            <p>${posts[postsNumber].description}</p>
-                            <button class="btn post-btn">Read More &nbsp;<i class="fas fa-arrow-right"></i></button>
-                        </div>
-                    </div>`);
-            }
-        }
+        postsNumber = loadPostsSiteContent(posts,postsNumber);
     });
-    
+  
     // Mobile
     $nav = $('.nav');
     $toggleCollapse = $('.toggle-collapse');
@@ -118,6 +96,57 @@ function loadPostsCarousel (posts) {
     });
 }
 
-function loadPostsSiteContent(posts) {
+function loadFirstPostsSiteContent(posts, postsNumber) {
+    for(postsNumber; postsNumber < 4; postsNumber++){
+        $(".posts").append(
+            `<hr>
+            <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                <div class="post-image">
+                    <div>
+                        <img src="${posts[postsNumber].image}" class="img" alt="blog1">
+                    </div>
+                    <div class="post-info flex-row">
+                        <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                        <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Janeiro 14, 2022</span>
+                    </div>
+                </div>
+                <div class="post-title">
+                    <a href="#">${posts[postsNumber].title}</a>
+                    <p>${posts[postsNumber].description}</p>
+                    <button class="btn post-btn">Read More &nbsp;<i class="fas fa-arrow-right"></i></button>
+                </div>
+            </div>`);
+    }
 
+    $(".posts").append(`<button class="btn more-btn">Read More &nbsp;<i></i></button>`);
+
+    return postsNumber;
+}
+
+function loadPostsSiteContent(posts, postsNumber) {
+    let aux = postsNumber;
+    for(postsNumber; postsNumber < (aux+4); postsNumber++){
+        if(postsNumber < posts.length){
+            $(".more-btn").before(
+                `<hr>
+                <div class="post-content" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="post-image">
+                        <div>
+                            <img src="${posts[postsNumber].image}" class="img" alt="blog1">
+                        </div>
+                        <div class="post-info flex-row">
+                            <span><i class="fas fa-user text-gray"></i>&nbsp;&nbsp;Admin</span>
+                            <span><i class="fas fa-calendar-alt text-gray"></i>&nbsp;&nbsp;Janeiro 14, 2022</span>
+                        </div>
+                    </div>
+                    <div class="post-title">
+                        <a href="#">${posts[postsNumber].title}</a>
+                        <p>${posts[postsNumber].description}</p>
+                        <button class="btn post-btn">Read More &nbsp;<i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>`);
+        }
+    }
+
+    return postsNumber;
 }
